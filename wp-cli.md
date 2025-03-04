@@ -1,0 +1,1 @@
+sudo wp cli update

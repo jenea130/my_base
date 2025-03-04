@@ -1,0 +1,4 @@
+parted /dev/sda
+
+gpt
+

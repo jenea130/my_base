@@ -1,0 +1,5 @@
+- от Ларичева
+- lua-language-server
+- eslint_d
+- prettierd
+- luaformatter

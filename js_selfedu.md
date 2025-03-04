@@ -1,0 +1,13 @@
+parentNode
+previousSibling
+nextSibling
+childNodes
+firstChild
+lastChild
+
+parentElement
+previousElementSibling
+nextElementSibling
+children
+firstElementChild
+lastElementChild
