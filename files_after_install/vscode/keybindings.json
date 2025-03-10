@@ -1,0 +1,101 @@
+[
+    // NAVIGATION
+    {
+        "key": "ctrl+shift+a",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+w",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
+    // FILE TREE
+    {
+        "command": "workbench.action.toggleSidebarVisibility",
+        "key": "ctrl+e"
+    },
+    {
+        "command": "workbench.files.action.focusFilesExplorer",
+        "key": "ctrl+e",
+        "when": "editorTextFocus"
+    },
+    // panes
+    {
+        "before": [
+            "leader",
+            "h"
+        ],
+        "commands": [
+            "workbench.action.focusLeftGroup"
+        ]
+    },
+    {
+        "before": [
+            "leader",
+            "j"
+        ],
+        "commands": [
+            "workbench.action.focusBelowGroup"
+        ]
+    },
+    {
+        "before": [
+            "leader",
+            "k"
+        ],
+        "commands": [
+            "workbench.action.focusAboveGroup"
+        ]
+    },
+    {
+        "before": [
+            "leader",
+            "l"
+        ],
+        "commands": [
+            "workbench.action.focusRightGroup"
+        ]
+    },
+    {
+        "before": [
+            "leader",
+            "f"
+        ],
+        "commands": [
+            "workbench.action.quickOpen"
+        ]
+    },
+    {
+        "before": [
+            "leader",
+            "p"
+        ],
+        "commands": [
+            "editor.action.formatDocument"
+        ]
+    },
+    {
+        "before": [
+            "g",
+            "h"
+        ],
+        "commands": [
+            "editor.action.showDefinitionPreviewHover"
+        ]
+    }
+]
