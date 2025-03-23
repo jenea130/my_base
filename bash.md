@@ -29,5 +29,17 @@ tr -s ' ' < file.txt | cut -d ' ' -f3
 counter=$[$counter+1]
 counter=$(( $counter + 1 ))
 let "counter = $counter + 1"
+let counter = "$counter + 1"
+expr $counter + 1
+
 
 ---------------
+
+for i in `seq 1 10`; do touch file$i.txt; done
+
+---------------
+
+random number from 1 to 100
+RAND_NUMBER=$(( 1 + RANDOM % 100 ))
+
+------------------------------------
