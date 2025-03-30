@@ -27,3 +27,11 @@ journalctl -p 0
 (7)debug 
 
 ------------------------------
+
+/etc/systemd/journald.conf
+
+SystemMaxUse=100M 
+SystemMaxFileSize=50M 
+SystemMaxFiles=4
+
+-------------------------------
