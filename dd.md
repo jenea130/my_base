@@ -15,3 +15,19 @@ sync
 
 #снять образ с флешки
 dd if=/dev/sdc of=flash.img bs=512
+
+-----------------
+
+dd if=/dev/sda bs=512 count=1 | file -
+
+dd if=/dev/sda bs=512 count=1 | hexdump -C 
+
+---------------------
+
+сгенерировать файл в 100mb
+dd if=/dev/urandom of=testfile bs=1M count=100
+
+---------------------
+
+swapfile
+dd if=/dev/zero of=/swapfile bs=1K count=2M
