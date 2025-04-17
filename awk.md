@@ -19,3 +19,7 @@ sudo iw dev wlp1s0 scan | egrep -i 'ssid|signal' | awk '{ORS = (NR % 2 == 0)? "\
 ls -l | awk '$6 == "Jun" {sum += $5} END {print sum}'
 
 awk 'length($0) > 18 {cnt++} END {print "Count =", cnt}' filename
+
+ls -l | awk '/^-/{print $9}'
+
+awk -F: '$1=="root" {print}' /etc/passwd
