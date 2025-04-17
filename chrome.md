@@ -2,6 +2,13 @@ chrome://flags
 
 enable download bubble 
 
+-----------------------------------
+
+chrome:// flags/#enable-force-dark
+Force Dark Mode -- Enabled
+
+-----------------------------------
+
 ### Extentions for Chrome
 
 - AdGuard AdBlocker
