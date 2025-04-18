@@ -33,3 +33,13 @@ usermod -d /path/to/dir [user]
 # изменить оболочку
 usermod [user] -s /usr/bin/zsh
 
+---------------------------------
+
+lslogins -u
+
+last
+last -ap now
+
+users
+
+lastlog -u <user>
