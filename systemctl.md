@@ -4,6 +4,11 @@ sudo systemctl isolate graphical.target
 
 -------------------------
 
+systemctl list-unit-files --type=service
+systemctl --type=service --all
+
+-------------------------
+
 # режим ожидания
 systemctl suspend 
 
