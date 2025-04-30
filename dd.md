@@ -3,6 +3,7 @@ hexdump -C file.out | head
 
 -----------------
 
+# создание загрузочного usb-накопителя
 dd if=/path/to/iso of=/dev/sdX bs=4M status=progress; sync
 
 -------------
@@ -31,3 +32,8 @@ dd if=/dev/urandom of=testfile bs=1M count=100
 
 swapfile
 dd if=/dev/zero of=/swapfile bs=1K count=2M
+
+---------------------
+
+# удаление данных с диска
+dd if=/dev/urandom of=/dev/sda bs=4M status=progress
