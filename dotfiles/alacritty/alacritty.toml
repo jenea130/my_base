@@ -15,7 +15,26 @@ padding.y = 10
 # blur = true
 
 [font]
-normal.family = "JetBrainsMono Nerd Font"
-bold.family = "JetBrainsMono Nerd Font"
-# normal.family = "FiraCode Nerd Font"
 size = 9.0
+
+[font.normal]
+family =  "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[font.bold]
+family =  "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family =  "JetBrainsMono Nerd Font"
+style = "Italic"
+
+[font.bold_italic]
+family =  "JetBrainsMono Nerd Font"
+style = "Bold Italic"
+
+# family =  "MesloLGS Nerd Font Mono"
+# normal.family = "JetBrainsMono Nerd Font"
+# bold.family = "JetBrainsMono Nerd Font"
+# normal.family = "FiraCode Nerd Font"
+
