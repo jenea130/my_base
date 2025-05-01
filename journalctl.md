@@ -35,3 +35,5 @@ SystemMaxFileSize=50M
 SystemMaxFiles=4
 
 -------------------------------
+
+journalctl -S today -u some.service
