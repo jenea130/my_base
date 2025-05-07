@@ -8,3 +8,6 @@ find . -mtime -1
 
 # модифицированые в течении последних 3 суток
 find . -mtime -3
+
+# удалить все файлы кроме md
+find . -type f ! -name '*.md' -delete

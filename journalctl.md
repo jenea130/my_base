@@ -3,6 +3,7 @@ journalctl -b --grep='vdpau | dri driver'
 journalctl --list-boots
 journalctl -b 0
 
+
 journalctl -u NetworkManager
 
 

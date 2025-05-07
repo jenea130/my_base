@@ -21,3 +21,5 @@ prefix X закрыть текущий регион
 
 prefix Esc режим копирования
 prefix >    текст будет скопирован в /tmp/screen-exchange
+
+screen -S namesession -- задать имя сессии
