@@ -23,3 +23,6 @@ awk 'length($0) > 18 {cnt++} END {print "Count =", cnt}' filename
 ls -l | awk '/^-/{print $9}'
 
 awk -F: '$1=="root" {print}' /etc/passwd
+
+awk 'length > 80 {print NR, $0}'
+NR - номер входной строки
