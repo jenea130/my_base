@@ -47,3 +47,13 @@ beautiful.wallpaper = "/home/first/Downloads/wallpapers/plant.jpg"
 
 -- Gaps
 beautiful.useless_gap = 3
+
+	awful.key({ modkey }, "]", function()
+		awful.util.spawn("amixer -q -D pulse sset Master 5%+", false)
+	end),
+	awful.key({ modkey }, "[", function()
+		awful.util.spawn("amixer -q -D pulse sset Master 5%-", false)
+	end),
+	awful.key({ modkey }, "\\", function()
+		awful.util.spawn("amixer -D pulse set Master 1+ toggle", false)
+	end),
