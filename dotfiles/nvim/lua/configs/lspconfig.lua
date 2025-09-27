@@ -16,6 +16,16 @@ for _, lsp in ipairs(servers) do
   }
 end
 
+lspconfig.clangd.setup {
+  on_attach = function(client)
+    client.server_capabilities.documentFormattingProvider = false
+    client.server_capabilities.documentRangeFormattingProvider = false
+    nvlsp.on_attach(client)
+  end,
+  on_init = nvlsp.on_init,
+  capabilities = nvlsp.capabilities,
+}
+
 -- configuring single server, example: typescript
 lspconfig.ts_ls.setup {
   on_attach = nvlsp.on_attach,

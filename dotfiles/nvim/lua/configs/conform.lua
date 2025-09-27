@@ -12,10 +12,11 @@ local options = {
     c_cpp = { "clang-format" }, -- Hack to force download.
     c = { "clang_format" },
     cpp = { "clang_format" },
+    asm = { "asmfmt" },
   },
 
   formatters = {
-    ["clang-format"] = {
+    clang_format = {
       prepend_args = {
         "-style={ \
                 IndentWidth: 4, \
@@ -25,6 +26,10 @@ local options = {
                 IndentAccessModifiers: true, \
                 PackConstructorInitializers: Never}",
       },
+    },
+    asmfmt = {
+      command = "asmfmt",
+      stdin = true,
     },
   },
 
