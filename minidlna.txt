@@ -1,0 +1,15 @@
+sudo pacman -S minidlna
+
+sudo mkdir -p /srv/media/videos
+sudo chown -R minidlna:minidlna /srv/media
+
+# /etc/minidlna.conf
+media_dir=V,/srv/media/videos
+
+sudo systemctl restart minidlna
+sudo minidlnad -R
+
+journalctl -u minidlna -f
+
+
+
