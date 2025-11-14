@@ -1,0 +1,43 @@
+jq '.' filename
+jq '.roots'filename
+
+.roots.bookmark_bar
+.roots.bookmark_bar.children
+.roots.bookmark_bar.other
+.roots.bookmark_bar.synced
+.roots.bookmark_bar.children[].name
+
+
+'.roots.bookmark_bar.children[] | "\(.name): \(.url)"'
+
+--------------------------------------------
+
+jq -r '.roots.bookmark_bar.children[] | "\(.name)\t\(.url)"' ~/.config/google-chrome/Default/Bookmarks \
+  | fzf \
+  | cut -f2 \
+  | xargs google-chrome
+
+
+bm() {
+  local FILE="$HOME/.config/google-chrome/Default/Bookmarks"
+  jq -r '.roots.bookmark_bar.children[] | "\(.name)\t\(.url)"' "$FILE" \
+    | fzf --prompt="Выбери закладку: " \
+    | cut -f2 \
+    | xargs -r google-chrome
+}
+
+=============
+
+bm() {
+  local FILE="$HOME/.config/google-chrome/Default/Bookmarks"
+  jq -r '.roots.bookmark_bar.children[9].children[2].children[] | "\(.name)\t\(.url)"' "$FILE" \
+    | fzf --prompt="Выбери закладку: " \
+    | cut -f2 \
+    | xargs -r google-chrome-stable
+}
+
+
+----------------------------------------
+
+jq '.roots | keys' filename
+jq '.roots.bookmark_bar | keys' filename
