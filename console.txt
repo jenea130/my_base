@@ -1,0 +1,7 @@
+localectl list-keymaps | grep ro
+
+localectl list-x11-keymap-variants ro
+
+setxkbmap -layout "us,ru,ro" -variant ",,std" -option "grp:alt_shift_toggle"
+
+setxkbmap -query
