@@ -29,3 +29,7 @@ hexdump -C file.out | head
 http://onreader.mdl.ru/HandsonBooting/content/index.html
 
 ----------------
+
+declare -f 
+
+----------------
