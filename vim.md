@@ -114,3 +114,8 @@ set autoread
 set relativenumber
 
 ----------------
+
+подсветка ширины текста
+:let &colorcolumn = join(range(81,999), ',')
+
+-----------------
